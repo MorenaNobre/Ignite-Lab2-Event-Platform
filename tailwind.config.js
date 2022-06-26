@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.tsx"],
+  content: [
+    "./src/**/*.tsx",
+    "node_modules/flowbite-react/**/*.tsx",
+  ],
   theme: {
     extend: {
       backgroundImage: {
-        blur: "url(/src/assets/blur-background.png)"
+        blur: "url(/src/assets/blur-background.png)",
       },
       fontFamily: {
         sans: "Roboto, sans-serif",

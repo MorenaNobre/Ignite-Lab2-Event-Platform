@@ -21,11 +21,12 @@ export function Video(props: VideoProps) {
     },
   });
 
-  //desafio de estilizar e colocar spinner
   if (!data || !data.lesson) {
     return (
-      <div className="flex-1">
-        <p>Carregando...</p>
+      <div className="max-h-[200px] flex flex-1 items-center justify-center space-x-2 animate-pulse">
+        <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+        <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+        <div className="w-4 h-4 bg-green-500 rounded-full"></div>
       </div>
     );
   }
